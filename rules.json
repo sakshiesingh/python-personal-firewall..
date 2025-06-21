@@ -1,0 +1,41 @@
+[
+    {
+        "action": "block",
+        "ip": "1.2.3.4"
+    },
+    {
+        "action": "allow",
+        "port": 22,
+        "protocol": "TCP"
+    },
+    {
+        "port": 23,
+        "protocol": "TCP",
+        "action": "block",
+        "description": "Block Telnet traffic"
+    },
+    {
+        "port": 22,
+        "protocol": "TCP",
+        "action": "allow",
+        "description": "Allow SSH traffic"
+    },
+    {
+        "port": 80,
+        "protocol": "TCP",
+        "action": "allow",
+        "description": "Allow HTTP traffic"
+    },
+    {
+        "port": 443,
+        "protocol": "TCP",
+        "action": "allow",
+        "description": "Allow HTTPS traffic"
+    },
+    {
+        "action": "block",
+        "ip": "10.0.0.1",
+        "port": 8080,
+        "protocol": "TCP"
+    }
+]
